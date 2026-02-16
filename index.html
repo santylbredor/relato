@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Sociología Espontánea | Relato Fotográfico Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="transition-curtain"></div>
+
+    <!-- LANDING / APERTURA -->
+    <div class="landing-page" id="landingPage">
+        <div class="geometric-bg">
+            <div class="geo-shape shape-1"></div>
+            <div class="geo-shape shape-2"></div>
+            <div class="geo-shape shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-label">ANÁLISIS DE AUDIENCIAS DIGITALES</div>
+
+            <h1 class="hero-title">
+                <span class="title-line-1">SOCIOLOGÍA</span>
+                <span class="title-line-2">ESPONTÁNEA</span>
+            </h1>
+
+            <div class="hero-subtitle">Relato Fotográfico Interactivo</div>
+
+            <p class="hero-description">
+                Este ejercicio explora mis percepciones, suposiciones y construcciones
+                iniciales sobre las audiencias digitales para las que diseño experiencias.
+                A través de un recorrido visual y sonoro, reflexiono sobre cómo imagino
+                su comportamiento, su nivel de interacción y el significado que otorgo
+                a los entornos digitales antes de investigarlos metodológicamente.
+            </p>
+
+            <button class="cta-button" id="startBtn">
+                <span>INICIAR RECORRIDO</span>
+                <div class="button-arrow">→</div>
+            </button>
+
+            <div class="author-tag">By Santiago Labrador</div>
+
+            <div class="hero-footer">
+                <div class="footer-line"></div>
+                <span>DESPLAZA O NAVEGA PARA EXPLORAR</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCIA -->
+    <div class="experience-container hidden" id="experienceContainer">
+        <div class="slides-wrapper" id="slidesWrapper"></div>
+        <div class="progress-indicator" id="progressIndicator"></div>
+
+        <button class="nav-button nav-prev" id="prevBtn">←</button>
+        <button class="nav-button nav-next" id="nextBtn">→</button>
+
+        <button class="home-button" id="homeBtn" title="Reiniciar">⌂</button>
+
+        <div class="slide-counter" id="slideCounter">1 / 5</div>
+    </div>
+
+    <!-- CIERRE -->
+    <div class="landing-page hidden" id="closingPage">
+        <div class="geometric-bg">
+            <div class="geo-shape shape-1"></div>
+            <div class="geo-shape shape-2"></div>
+            <div class="geo-shape shape-3"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-label">CIERRE REFLEXIVO</div>
+
+            <h1 class="hero-title">
+                <span class="title-line-1">DE LA</span>
+                <span class="title-line-2">SUPOSICIÓN</span>
+            </h1>
+
+            <div class="hero-subtitle">A la comprensión de audiencias</div>
+
+            <p class="hero-description">
+                Este recorrido evidencia cómo nuestras ideas sobre los usuarios
+                nacen de percepciones personales, observaciones cercanas y proyecciones
+                subjetivas. Reconocer la sociología espontánea es el primer paso para
+                diseñar experiencias digitales más conscientes, empáticas y fundamentadas
+                en la investigación real de audiencias.
+            </p>
+
+            <button class="cta-button" onclick="location.reload()">
+                <span>REINICIAR EXPERIENCIA</span>
+                <div class="button-arrow">↺</div>
+            </button>
+            <div class="author-tag">By Santiago Labrador</div>
+        </div>
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
